@@ -1,0 +1,146 @@
+:root {
+    --main-color: #7B1E1E;
+    --black: #13131a;
+    --back-ground: #F7C99C;
+    --border: 0.1rem solid rgba(90,20,20,0.3);
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    background-color: var(--back-ground);
+}
+
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--back-ground);
+    background-color: var(--main-color);
+    background:linear-gradient(to top, #7B1E1E, #480c0c);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--back-ground);
+}
+
+.navbar a:hover {
+    color: #f8b169;
+    border-bottom: 0.1rem solid var(--mai-color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    
+}
+
+.icons img {
+    margin: 0 1rem;
+    cursor: pointer;
+
+}
+
+.icons img:hover {
+    width: 37px;
+    height: 37px;
+    color:#f8b169;
+}
+
+.numero{
+    color: var(--back-ground);
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 6px;
+}
+
+.ver {
+    background: var(--main-color);
+    color: var(--back-ground);
+    padding: 1rem 3rem;
+    font-size:  1.7rem;
+    cursor: pointer;
+    margin: 1rem;
+    display: inline-block;
+}
+
+.ver:hover {
+    color: #f8b169;
+    border-bottom: 0.1rem solid var(--border);
+    padding-bottom: 1rem 1rem;
+    font-size: 2rem;
+    
+}
+
+.home-container {
+    background: linear-gradient(to right, #f8b169 40%, transparent 60%),  url(./Imagens/3\ pratos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 100vh;
+  
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 60rem;
+}
+
+.content h1 {
+    color: var(--main-color);
+    font-size: 6rem;
+}
+
+.destaque{
+    font-family: 'great vibes', cursive;
+}
+
+.content p {
+    color: var(--main-color);
+    font-size: 2rem;
+    font-weight: 60;
+    line-height: 1.4;
+    padding: 1rem 0;
+}
